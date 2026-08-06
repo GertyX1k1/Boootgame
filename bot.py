@@ -16,7 +16,7 @@ logging.basicConfig(level=logging.INFO)
 async def main():
     db.init_db()
 
-    bot = Bot(token=8913472039:AAHv9cSRdog4b4Zh198f-NNctEgAmwbk9hA, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
+    bot = Bot(8913472039:AAHv9cSRdog4b4Zh198f-NNctEgAmwbk9hA, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
     dp = Dispatcher(storage=MemoryStorage())
 
     dp.include_router(admin.router)   # админ-роуты первыми, чтобы FSM админа не перехватывались
